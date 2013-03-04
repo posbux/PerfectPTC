@@ -52,7 +52,7 @@ class Frontend extends ApiFrontend {
             ->addMenuItem('examples','Bundled Examples')
             ->addMenuItem('how','Documentation')
             ->addMenuItem('dbtest','Database Test')
-            ->addMenuItem('authtest','Auth test')
+            ->addMenuItem('admin','Admin')
             ->addMenuItem('logout')
             ;
 

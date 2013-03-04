@@ -1,5 +1,5 @@
 <?php
-class page_authtest extends Page {
+class page_Admin extends Page {
     function init(){
         parent::init();
 
