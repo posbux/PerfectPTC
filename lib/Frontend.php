@@ -21,11 +21,7 @@ class Frontend extends ApiFrontend {
 
         // A lot of the functionality in Agile Toolkit requires jUI
         $this->add('jUI');
-
-        // Initialize any system-wide javascript libraries here
-        // If you are willing to write custom JavaScript code,
-        // place it into templates/js/atk4_univ_ext.js and
-        // include it here
+        
         $this->js()
             ->_load('atk4_univ')
             ->_load('ui.atk4_notify')
@@ -33,20 +29,8 @@ class Frontend extends ApiFrontend {
 
         // If you wish to restrict access to your pages, use BasicAuth class
         $this->add('BasicAuth')
-            ->allow('demo','demo')
-            // use check() and allowPage for white-list based auth checking
-            //->check()
-            ;
+            ->allow('demo','demo')->check();
 
-        // This method is executed for ALL the pages you are going to add,
-        // before the page class is loaded. You can put additional checks
-        // or initialize additional elements in here which are common to all
-        // the pages.
-
-        // Menu:
-
-        // If you are using a complex menu, you can re-define
-        // it and place in a separate class
         $this->add('Menu',null,'Menu')
             ->addMenuItem('index','Welcome')
             ->addMenuItem('examples','Bundled Examples')
