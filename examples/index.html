@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ <title>Agile Toolkit Examples</title>
+</head>
+<body>
+
+<h1>Welcome to examples section of Agile Toolkit</h1>
+
+<h3>Installation:</h3>
+<p>Before you can use the examples, you need to set up database. Follow theese steps:
+<ol>
+<li>Create a new MySQL database.</li>
+<li>Enable mod_rewrite for this directory (and examine .htaccess files if examples don't work)</li>
+<li>Import file <a href="schema.sql">schema.sql</a> into your database.</li>
+<li>Edit file config.php and enter your MySQL username, password and database name there.</li>
+<li>Delete "examples" directory if you are no longer need it.</li>
+</ol>
+
+<p>Select one of the bundled examples below:</p>
+
+<ol>
+<li><a href="blog/">Blog Example</a> — Demonstrates how to build dual interfaces with different templates and access control. This example avoids use of Models, to show you how you can create application withouth them.</li>
+<li><a href="blog_models/">Blog Example with Models</a> — Does exactly same thing like last example, but this time it properly uses Models. </li>
+<li><a href="dvdrental/">DVDRental</a> — Project which is focused on functionality rather than look. DVDRental implements a simple DVD Rental Management application based on 4 tables.</li>
+</ol>
+
+</body></html>
